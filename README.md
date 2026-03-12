@@ -10,16 +10,23 @@
 
 This repository contains code and notebooks used in the MMDA recitation sessions, covering topics such as numerical linear algebra, scientific computing, and data analysis with Python.
 
+- `recitation1.ipynb`: basic linear algebra computation with NumPy / SciPy / SymPy.
+- `recitation2.ipynb`: problems including matrix decomposition, SVD-based image compression, and optional compressed sensing reconstruction.
+
 ## Repository Structure
 
 ```cmd
 mmda/
 ├── notebook/
-│   ├── pre_class_intro_to_jupyter.ipynb  # Pre-class: Introduction to Jupyter Notebook
-│   └── recitation1.ipynb                 # Recitation 1: NumPy / SciPy & Linear Algebra
+│   ├── pre_class.ipynb   # Pre-class notes and warm-up
+│   ├── recitation1.ipynb # Recitation 1: NumPy / SciPy & Linear Algebra
+│   └── recitation2.ipynb # Recitation 2: SVD compression and compressed sensing
+├── res/
+│   └── bigtiger.jpeg     # Sample image used in recitation2
 ├── src/
+│   ├── lec2_cl1.py        # Lecture/recitation experiment script
 │   ├── utils.py           # Utility functions (timing & memory analysis)
-│   └── time_memory.py     # Time and memory benchmarking helpers
+│   └── __init__.py
 ├── LICENSE                # MIT License
 └── pyproject.toml         # Project configuration and dependencies
 ```

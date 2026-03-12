@@ -10,16 +10,23 @@ English documentation: [README.md](README.md)
 
 本仓库收录 MMDA 课程习题课所用的代码与 Notebook，涵盖数值线性代数、科学计算、数据分析等主题的 Python 实现。
 
+- `recitation1.ipynb`：以 NumPy / SciPy / SymPy 为主的线性代数基础题。
+- `recitation2.ipynb`：包含矩阵分解、基于 SVD 的图像压缩，以及可选的压缩感知重建。
+
 ## 目录结构
 
 ```cmd
 mmda/
 ├── notebook/
-│   ├── pre_class_intro_to_jupyter.ipynb  # 课前：Jupyter Notebook 快速入门
-│   └── recitation1.ipynb                 # 习题课 1：NumPy / SciPy 与线性代数
+│   ├── pre_class.ipynb   # 课前内容与预备练习
+│   ├── recitation1.ipynb # 习题课 1：NumPy / SciPy 与线性代数
+│   └── recitation2.ipynb # 习题课 2：SVD 压缩与压缩感知
+├── res/
+│   └── bigtiger.jpeg     # recitation2 使用的示例图像
 ├── src/
+│   ├── lec2_cl1.py        # 课堂/习题实验脚本
 │   ├── utils.py           # 工具函数（计时与内存分析）
-│   └── time_memory.py     # 时间与内存基准测试辅助函数
+│   └── __init__.py
 ├── LICENSE                # MIT 许可证
 └── pyproject.toml         # 项目配置与依赖
 ```
