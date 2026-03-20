@@ -14,7 +14,11 @@ repos:
       - id: fix-byte-order-marker
       - id: check-added-large-files
         args: [--maxkb=1024]
-        exclude: '\.ipynb$'
+        exclude: |
+          (?x)^(
+            .*\.ipynb|
+            .*\.gif
+          )$
       - id: check-merge-conflict
       - id: check-symlinks
       - id: check-toml
@@ -47,7 +51,7 @@ repos:
         args:
           [
             "--ignore-missing-imports",
-            "--python-version=3.11",
+            "--python-version=3.12",
           ]
   - repo: https://github.com/codespell-project/codespell
     rev: v2.4.2
