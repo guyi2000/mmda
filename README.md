@@ -10,8 +10,9 @@
 
 This repository contains code and notebooks used in the MMDA recitation sessions, covering topics such as numerical linear algebra, scientific computing, and data analysis with Python.
 
-- `recitation1.ipynb`: basic linear algebra computation with NumPy / SciPy / SymPy.
-- `recitation2.ipynb`: problems including matrix decomposition, SVD-based image compression, and optional compressed sensing reconstruction.
+- `pre_class.ipynb`: pre-class notes and warm-up tasks.
+- `recitation1.ipynb` to `recitation4.ipynb`: recitation notebooks for progressive practice.
+- `src/lec2_cl1.py`: benchmark script comparing dense/sparse matrix construction and solving.
 
 ## Repository Structure
 
@@ -20,15 +21,20 @@ mmda/
 ├── notebook/
 │   ├── pre_class.ipynb   # Pre-class notes and warm-up
 │   ├── recitation1.ipynb # Recitation 1: NumPy / SciPy & Linear Algebra
-│   └── recitation2.ipynb # Recitation 2: SVD compression and compressed sensing
+│   ├── recitation2.ipynb # Recitation 2 notebook
+│   ├── recitation3.ipynb # Recitation 3 notebook
+│   └── recitation4.ipynb # Recitation 4 notebook
 ├── res/
-│   └── bigtiger.jpeg     # Sample image used in recitation2
+│   └── ...               # Static resources used by notebooks/scripts
 ├── src/
 │   ├── lec2_cl1.py        # Lecture/recitation experiment script
 │   ├── utils.py           # Utility functions (timing & memory analysis)
 │   └── __init__.py
+├── out/                   # Generated figures/PDF outputs from scripts
+├── tmp.ipynb              # Temporary notebook for quick experiments
 ├── LICENSE                # MIT License
-└── pyproject.toml         # Project configuration and dependencies
+├── pyproject.toml         # Project configuration and dependencies
+└── uv.lock                # Locked dependency versions (uv)
 ```
 
 ## Getting Started
@@ -53,6 +59,15 @@ uv sync
 
 Open any `.ipynb` file in VS Code or JupyterLab and select the `.venv` kernel created by `uv`.
 
+### Running Scripts
+
+```bash
+# Run the experiment script
+uv run python src/lec2_cl1.py
+```
+
+The script saves comparison plots to the `out/` directory.
+
 ## Dependencies
 
 | Package                       | Purpose                               |
@@ -60,8 +75,10 @@ Open any `.ipynb` file in VS Code or JupyterLab and select the `.venv` kernel cr
 | `numpy`                       | Numerical computing                   |
 | `scipy`                       | Scientific computing & linear algebra |
 | `sympy`                       | Symbolic mathematics                  |
+| `pandas`                      | Data handling                         |
 | `matplotlib` / `scienceplots` | Plotting                              |
 | `plotly`                      | Interactive visualization             |
+| `threadpoolctl`               | Thread control for benchmarks         |
 | `ipykernel` / `ipywidgets`    | Jupyter support                       |
 
 ## Code Quality

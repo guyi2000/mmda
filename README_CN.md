@@ -10,8 +10,9 @@ English documentation: [README.md](README.md)
 
 本仓库收录 MMDA 课程习题课所用的代码与 Notebook，涵盖数值线性代数、科学计算、数据分析等主题的 Python 实现。
 
-- `recitation1.ipynb`：以 NumPy / SciPy / SymPy 为主的线性代数基础题。
-- `recitation2.ipynb`：包含矩阵分解、基于 SVD 的图像压缩，以及可选的压缩感知重建。
+- `pre_class.ipynb`：课前内容与热身练习。
+- `recitation1.ipynb` 至 `recitation4.ipynb`：习题课递进式 Notebook。
+- `src/lec2_cl1.py`：对稠密/稀疏矩阵构造与求解进行性能对比的脚本。
 
 ## 目录结构
 
@@ -20,15 +21,20 @@ mmda/
 ├── notebook/
 │   ├── pre_class.ipynb   # 课前内容与预备练习
 │   ├── recitation1.ipynb # 习题课 1：NumPy / SciPy 与线性代数
-│   └── recitation2.ipynb # 习题课 2：SVD 压缩与压缩感知
+│   ├── recitation2.ipynb # 习题课 2 Notebook
+│   ├── recitation3.ipynb # 习题课 3 Notebook
+│   └── recitation4.ipynb # 习题课 4 Notebook
 ├── res/
-│   └── bigtiger.jpeg     # recitation2 使用的示例图像
+│   └── ...               # Notebook/脚本使用的静态资源
 ├── src/
 │   ├── lec2_cl1.py        # 课堂/习题实验脚本
 │   ├── utils.py           # 工具函数（计时与内存分析）
 │   └── __init__.py
+├── out/                   # 脚本生成的图表/PDF 输出
+├── tmp.ipynb              # 临时实验 Notebook
 ├── LICENSE                # MIT 许可证
-└── pyproject.toml         # 项目配置与依赖
+├── pyproject.toml         # 项目配置与依赖
+└── uv.lock                # 依赖锁定文件（uv）
 ```
 
 ## 快速开始
@@ -53,6 +59,15 @@ uv sync
 
 在 VS Code 或 JupyterLab 中打开任意 `.ipynb` 文件，选择由 `uv` 创建的 `.venv` 内核即可运行。
 
+### 运行脚本
+
+```bash
+# 运行实验脚本
+uv run python src/lec2_cl1.py
+```
+
+脚本会将对比图保存到 `out/` 目录。
+
 ## 主要依赖
 
 | 包                            | 用途               |
@@ -60,8 +75,10 @@ uv sync
 | `numpy`                       | 数值计算           |
 | `scipy`                       | 科学计算与线性代数 |
 | `sympy`                       | 符号数学           |
+| `pandas`                      | 数据处理           |
 | `matplotlib` / `scienceplots` | 绘图               |
 | `plotly`                      | 交互式可视化       |
+| `threadpoolctl`               | 基准测试线程控制   |
 | `ipykernel` / `ipywidgets`    | Jupyter 支持       |
 
 ## 代码规范
