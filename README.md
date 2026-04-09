@@ -11,7 +11,8 @@
 This repository contains code and notebooks used in the MMDA recitation sessions, covering topics such as numerical linear algebra, scientific computing, and data analysis with Python.
 
 - `pre_class.ipynb`: pre-class notes and warm-up tasks.
-- `recitation1.ipynb` to `recitation4.ipynb`: recitation notebooks for progressive practice.
+- `recitation1.ipynb` to `recitation5.ipynb`: recitation notebooks for progressive practice.
+- `notebook/recitation5.ipynb`: finite-difference continuation and finite-volume prerequisites, including sparse Kronecker-form Poisson solvers.
 - `src/lec2_cl1.py`: benchmark script comparing dense/sparse matrix construction and solving.
 
 ## Repository Structure
@@ -23,7 +24,8 @@ mmda/
 │   ├── recitation1.ipynb # Recitation 1: NumPy / SciPy & Linear Algebra
 │   ├── recitation2.ipynb # Recitation 2 notebook
 │   ├── recitation3.ipynb # Recitation 3 notebook
-│   └── recitation4.ipynb # Recitation 4 notebook
+│   ├── recitation4.ipynb # Recitation 4 notebook
+│   └── recitation5.ipynb # Recitation 5: FD continuation & FV prerequisites
 ├── res/
 │   └── ...               # Static resources used by notebooks/scripts
 ├── src/
