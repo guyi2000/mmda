@@ -96,9 +96,10 @@ uv run python src/generate_mesh.py
 2. 打开 `notebook/recitation6.ipynb`，从上到下顺序运行各单元。
 
 3. 在 `out/` 下检查输出文件：
-	- `thu_mesh.msh`
-	- `heat_diffusion.gif`
-	- `THU_FEM.gif`
+
+- `thu_mesh.msh`
+- `heat_diffusion.gif`
+- `THU_FEM.gif`
 
 ## 主要依赖
 
