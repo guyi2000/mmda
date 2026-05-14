@@ -11,9 +11,11 @@
 This repository contains code and notebooks used in the MMDA recitation sessions, covering topics such as numerical linear algebra, scientific computing, finite-volume methods, and finite-element methods with Python.
 
 - `pre_class.ipynb`: pre-class notes and warm-up tasks.
-- `recitation1.ipynb` to `recitation6.ipynb`: recitation notebooks for progressive practice.
+- `recitation1.ipynb` to `recitation8.ipynb`: recitation notebooks for progressive practice.
 - `notebook/recitation5.ipynb`: finite-difference continuation and finite-volume prerequisites, including sparse Kronecker-form Poisson solvers.
 - `notebook/recitation6.ipynb`: Burgers equation (Godunov/FV), 1D FEM (hat + bubble basis), and heat diffusion on both structured and unstructured meshes.
+- `notebook/recitation7.ipynb`: Recitation 7 notebook.
+- `notebook/recitation8.ipynb`: Bayesian inference notebook (inverse source localization, card-shuffle simulation, and rejection sampling).
 - `src/lec2_cl1.py`: benchmark script comparing dense/sparse matrix construction and solving.
 - `src/generate_mesh.py`: generate the THU-shaped unstructured mesh (`out/thu_mesh.msh`) using Gmsh.
 
@@ -28,7 +30,9 @@ mmda/
 │   ├── recitation3.ipynb # Recitation 3 notebook
 │   ├── recitation4.ipynb # Recitation 4 notebook
 │   ├── recitation5.ipynb # Recitation 5: FD continuation & FV prerequisites
-│   └── recitation6.ipynb # Recitation 6: FV continuation + FEM + heat diffusion
+│   ├── recitation6.ipynb # Recitation 6: FV continuation + FEM + heat diffusion
+│   ├── recitation7.ipynb # Recitation 7 notebook
+│   └── recitation8.ipynb # Recitation 8: Bayesian inference
 ├── res/
 │   └── ...               # Static resources used by notebooks/scripts
 ├── src/

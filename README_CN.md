@@ -11,9 +11,11 @@ English documentation: [README.md](README.md)
 本仓库收录 MMDA 课程习题课所用的代码与 Notebook，涵盖数值线性代数、科学计算、有限体积方法与有限元方法等主题的 Python 实现。
 
 - `pre_class.ipynb`：课前内容与热身练习。
-- `recitation1.ipynb` 至 `recitation6.ipynb`：习题课递进式 Notebook。
+- `recitation1.ipynb` 至 `recitation8.ipynb`：习题课递进式 Notebook。
 - `notebook/recitation5.ipynb`：有限差分续讲与有限体积法预备内容（含 Kronecker 形式稀疏泊松求解）。
 - `notebook/recitation6.ipynb`：Burgers 方程（Godunov/FV）、一维 FEM（帽函数与 bubble 基）、以及结构/非结构网格热扩散模拟。
+- `notebook/recitation7.ipynb`：习题课 7 Notebook。
+- `notebook/recitation8.ipynb`：贝叶斯推断 Notebook（逆问题震源定位、洗牌模拟与拒绝采样）。
 - `src/lec2_cl1.py`：对稠密/稀疏矩阵构造与求解进行性能对比的脚本。
 - `src/generate_mesh.py`：使用 Gmsh 生成 THU 形状非结构网格（`out/thu_mesh.msh`）。
 
@@ -28,7 +30,9 @@ mmda/
 │   ├── recitation3.ipynb # 习题课 3 Notebook
 │   ├── recitation4.ipynb # 习题课 4 Notebook
 │   ├── recitation5.ipynb # 习题课 5：FD 续讲与 FV 预备
-│   └── recitation6.ipynb # 习题课 6：FV 续讲 + FEM + 热扩散
+│   ├── recitation6.ipynb # 习题课 6：FV 续讲 + FEM + 热扩散
+│   ├── recitation7.ipynb # 习题课 7 Notebook
+│   └── recitation8.ipynb # 习题课 8：贝叶斯推断
 ├── res/
 │   └── ...               # Notebook/脚本使用的静态资源
 ├── src/
